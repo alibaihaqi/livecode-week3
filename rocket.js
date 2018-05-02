@@ -23,19 +23,22 @@ xoxox
 xoxoxo
 
 */
-var awal = '';
 
 function drawLadder(row) {
+    var awal = '';
     for (var i = 1; i <= row; i++) {
-        if (i % 2 !== 0) {
+        for (var j = 1; j <= i; j++) {
+        if (j % 2 !== 0) {
             awal = awal + 'x';
-        }
+            }
         else {
             awal = awal + 'o';
+            }
         }
+        awal = awal + '\n';
+    // hanya code disini
     }
-    console.log(awal);    // hanya code disini
-  }
-
-  drawLadder(6);
-  drawLadder(3);
+    return awal;
+}
+var tes =  drawLadder(6);
+console.log(tes);

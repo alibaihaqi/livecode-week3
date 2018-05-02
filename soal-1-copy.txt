@@ -1,0 +1,36 @@
+/**
+Buatlah sebuah PSEUDOCODE untuk kasus berikut:
+
+Sebuah mobil sedang berjalan dengan kecepatan 80 km/jam.
+Ketika mobil akan menanjak sebuah jalanan/jalur, kecepatan mobil akan berkurang
+sesuai dengan kemiringan sudut dari jalan tersebut:
+ - sudut kemiringan jalan 0-14 derajat maka kecepatan mobil tidak akan berkurang
+ - sudut kemiringan jalan 15-29 derajat maka kecepatan mobil akan berkurang 10 km/jam
+ - sudut kemiringan jalan 30-44 derajat maka kecepatan mobil akan berkurang 15 km/jam
+ - sudut kemiringan jalan 45-50 derajat maka kecepatan mobil akan berkurang 25 km/jam
+
+Tampilkan kecepatan mobil jika menghadapi tanjakan dengan sudut kemiringan tersebut
+**/
+
+
+//your alogritma/pseudocode here
+
+STORE and SET vmobilawal to 80
+//kecepatan mobil dalam satuan km/jam
+
+STORE kemiringan to ANY value (`NUMBER`) from 0 to 50
+
+IF (kemiringan GREATER THAN OR EQUAL 0 && kemiringan LESSER THAN OR EQUAL 14) {
+    vkemiringan EQUAL 0;
+}
+ELSE IF (kemiringan GREATER THAN OR EQUAL 15 && kemiringan LESSER THAN OR EQUAL 29) {
+    vkemiringan EQUAL 10;
+}
+ELSE IF (kemiringan GREATER THAN OR EQUAL 15 && kemiringan LESSER THAN OR EQUAL 29) {
+    vkemiringan EQUAL 15;
+}
+ELSE {
+    vkemiringan EQUAL 25;
+}
+
+CALCULATE vmobilmiring EQUAL to vmobilawal MINUS vkemiringan;

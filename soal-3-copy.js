@@ -32,16 +32,22 @@ sisa bagi-nya. Note. sisa bagi berbeda dengan hasil bagi!
 function mergeStrings(str1, str2, str3, str4) {
     return str1 + '-' + str2 + '-' + str3 + '-' + str4;// hanya code disini
 }
-  
+
+
+
 function evenSiblings(num) {
-    for (var i = 0; i < num; i++) {
+    var angka2 = '';
+    for (var i = 0; i <= num; i++) {
         if (i % 2 === 0) {
-            console.log(i);
+            angka2 = angka2 + i + ' ';
         }
-        return i;
-    }    // hanya code disini
+    }
+    return angka2;    // hanya code disini
 }
   
 function remainder (num1, num2) {
     return  num1 % num2;    // hanya code disini
 }
+
+var tes = evenSiblings(15);
+console.log(tes);
